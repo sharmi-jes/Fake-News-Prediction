@@ -1,1 +1,84 @@
-<h1>hiiiiiiiiiiiiiii</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="border-b bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-gray-800">FakeNewsDetector</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#" class="text-sm font-medium hover:text-blue-600">Home</a>
+                <a href="#" class="text-sm font-medium hover:text-blue-600">How It Works</a>
+                <a href="#" class="text-sm font-medium hover:text-blue-600">About</a>
+                <a href="#" class="text-sm font-medium hover:text-blue-600">Contact</a>
+            </nav>
+            <button class="hidden md:inline-flex px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white">Sign In</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 md:py-32 text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">Detect Fake News with Confidence</h1>
+            <p class="text-xl md:text-2xl mb-10">Our AI technology with <span class="font-bold">98% accuracy</span> helps identify misinformation instantly.</p>
+            <form action="/predict" method="POST">
+                <button type="submit" class="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200">
+                  Start Detecting Now
+                </button>
+              </form>
+              
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    🔍
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Analyze Content</h3>
+                <p>Scan articles and social media posts for misinformation.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    ⚠️
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Identify Red Flags</h3>
+                <p>Detect misleading headlines and emotional language.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    ✅
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Verify Sources</h3>
+                <p>Cross-check information with trusted sources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="container mx-auto">
+            <p class="text-5xl font-bold">98%</p>
+            <p class="text-lg mt-2">Accuracy Rate</p>
+            <button class="mt-6 px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200">Start Detecting Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>© 2024 FakeNewsDetector. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

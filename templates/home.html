@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+    <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-md text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Fake News Detector</h2>
+        <p class="text-gray-600 mb-6">Enter a news article below to check if it’s real or fake.</p>
+        
+        <textarea id="newsInput" class="w-full p-4 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" rows="4" placeholder="Type or paste the news here..."></textarea>
+        
+        <button onclick="predictNews()" class="mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg shadow-md hover:opacity-90">Predict</button>
+        
+        <p id="result" class="mt-4 text-lg font-semibold"></p>
+    </div>
+
+    <!-- <script>
+        function predictNews() {
+            let newsText = document.getElementById('newsInput').value;
+            if (!newsText) {
+                document.getElementById('result').innerText = "Please enter some news text.";
+                return;
+            }
+            // Fake prediction logic (replace with actual model integration)
+            let isFake = Math.random() > 0.5 ? 'Fake' : 'Real';
+            document.getElementById('result').innerText = `Prediction: ${isFake}`;
+            document.getElementById('result').style.color = isFake === 'Fake' ? 'red' : 'green';
+        }
+    </script> -->
+</body>
+</html>
